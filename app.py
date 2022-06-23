@@ -55,7 +55,7 @@ def getHousesByDateAndKeyword():
     return output_json
 
 
-@app.route('/getHousesByDesc', methods=['POST'])
+@app.route('/getHousesByDesc')
 def getHousesByDesc():
     input_json = request.get_json()
     keyword = input_json['keyword']
@@ -94,7 +94,7 @@ def getHousesByCity():
     return output_json
 
 
-@app.route('/gethouses', methods=['POST'])
+@app.route('/gethouses')
 def gethouses():
     input_json = request.get_json()
     keyword = input_json['keyword']
